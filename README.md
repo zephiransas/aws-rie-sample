@@ -8,3 +8,10 @@ aws-lambda-runtime-interface-emulatorを使い、ローカルでAWS LambdaとAPI
 - [aws-lambda-runtime-interface-emulator](https://github.com/aws/aws-lambda-runtime-interface-emulator)
 - [local-api-gateway](https://github.com/brefphp/local-api-gateway)
   - aws-lambda-rieへのリクエストを、APIGatewayのプロキシ統合リクエストにラップする
+
+## How to use
+
+```
+docker-compose up（起動したら
+curl -XPOST http://localhost:8080 -d '{"name": "zephiransas"}'
+```
